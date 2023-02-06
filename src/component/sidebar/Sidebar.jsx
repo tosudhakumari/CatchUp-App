@@ -3,6 +3,7 @@ import {Users} from "../../dummyData"
 import CloseFriend from "../closeFriend/CloseFriend";
 
 const Sidebar = () => {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
@@ -10,7 +11,7 @@ const Sidebar = () => {
           <li className="sideBarListItem">
             <img
               className="sidebarIcon"
-              src="assests/rssfeed.jpeg"
+              src={`${PF}rssfeed.jpeg`}
               alt="rssfeed"
               style={{ width: "15px" }}
             />
@@ -19,7 +20,7 @@ const Sidebar = () => {
           <li className="sideBarListItem">
             <img
               className="sidebarIcon"
-              src="assests/chat.jpeg"
+              src={`${PF}chat.jpeg`}
               alt="rssfeed"
               style={{ width: "15px" }}
             />
@@ -28,7 +29,7 @@ const Sidebar = () => {
           <li className="sideBarListItem">
             <img
               className="sidebarIcon"
-              src="assests/bookmark.jpeg"
+              src={`${PF}bookmark.jpeg`}
               alt="rssfeed"
               style={{ width: "15px" }}
             />
@@ -37,7 +38,7 @@ const Sidebar = () => {
           <li className="sideBarListItem">
             <img
               className="sidebarIcon"
-              src="assests/videos.jpeg"
+              src={`${PF}videos.jpeg`}
               alt="rssfeed"
               style={{ width: "15px" }}
             />
@@ -46,7 +47,7 @@ const Sidebar = () => {
           <li className="sideBarListItem">
             <img
               className="sidebarIcon"
-              src="assests/group.jpeg"
+              src={`${PF}group.jpeg`}
               alt="rssfeed"
               style={{ width: "15px" }}
             />
@@ -55,7 +56,7 @@ const Sidebar = () => {
           <li className="sideBarListItem">
             <img
               className="sidebarIcon"
-              src="assests/rssfeed.jpeg"
+              src={`${PF}rssfeed.jpeg`}
               alt="rssfeed"
               style={{ width: "15px" }}
             />
@@ -64,7 +65,7 @@ const Sidebar = () => {
           <li className="sideBarListItem">
             <img
               className="sidebarIcon"
-              src="assests/rssfeed.jpeg"
+              src={`${PF}rssfeed.jpeg`}
               alt="rssfeed"
               style={{ width: "15px" }}
             />

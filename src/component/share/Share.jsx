@@ -1,13 +1,14 @@
 import "./share.css";
 
 const Share = () => {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER
   return (
     <div className="share">
       <div className="shareWrapper">
         <div className="shareTop">
           <img
             className="shareProfilePicture"
-            src="assests/person/1.jpeg"
+            src={`${PF}person/1.jpeg`}
             alt="person"
           />
           <input placeholder="what is in your mind" className="shareInput" />
@@ -17,7 +18,7 @@ const Share = () => {
           <div className="shareOptions">
             <div className="shareOption">
               <img
-                src="assests/media.jpeg"
+                src={`${PF}media.jpeg`}
                 alt="media"
                 className="shareIcon"
                 style={{ width: "25px" }}
@@ -26,7 +27,7 @@ const Share = () => {
             </div>
             <div className="shareOption">
               <img
-                src="assests/tag.jpeg"
+                src={`${PF}tag.jpeg`}
                 alt="media"
                 className="shareIcon"
                 style={{ width: "25px" }}
@@ -35,7 +36,7 @@ const Share = () => {
             </div>
             <div className="shareOption">
               <img
-                src="assests/location.jpeg"
+                src={`${PF}location.jpeg`}
                 alt="media"
                 className="shareIcon"
                 style={{ width: "25px" }}
@@ -44,7 +45,7 @@ const Share = () => {
             </div>
             <div className="shareOption">
               <img
-                src="assests/feeling.jpeg"
+                src={`${PF}feeling.jpeg`}
                 alt="media"
                 className="shareIcon"
                 style={{ width: "25px" }}

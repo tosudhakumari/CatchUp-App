@@ -10,7 +10,9 @@ const Post = ({post}) => {
   const[like,setLike]= useState(post.like)
   const[isLiked,setIsLiked]= useState(false)
   const{date,photo,desc,comment}=post 
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER
 
+ 
   // const user = Users.filter((u)=> u.id===post.userId)[0].username
   // console.log(user)
 
@@ -25,7 +27,7 @@ const Post = ({post}) => {
         <div className="postTop">
           <div className="postTopLeft">
             <img
-              src={Users.filter((u)=> u.id===post.userId)[0].profilePicture}
+              src={PF + Users.filter((u)=> u.id===post.userId)[0].profilePicture}
               alt="person"
               className="postProfileImage"
             />
@@ -34,7 +36,7 @@ const Post = ({post}) => {
           </div>
           <div className="postTopRight">
             <img
-              src="assests/morevert.jpeg"
+              src={`${PF}morevert.jpeg`}
               alt="dots"
               style={{ width: "25px" }}
             />
@@ -42,20 +44,20 @@ const Post = ({post}) => {
         </div>
         <div className="postCenter">
           <span className="postText">{desc}</span>
-          <img className="postImg" src={photo} alt="post" />
+          <img className="postImg" src={PF + photo} alt="post" />
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
             <img
               className="likeIcon"
-              src="assests/like.png"
+              src={`${PF}like.png`}
               alt="like"
               style={{ width: "40px" }}
               onClick={likehandler}
             />
             <img
               className="heartIcon"
-              src="assests/heart.png"
+              src={`${PF}heart.png`}
               alt="heart"
               style={{ width: "40px" }}
             />
